@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <!--날짜 표시 (아침일 경우만 표시한다.)-->
+    <TextView
+        android:id="@+id/menu_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="20sp"/>
+
+    <!--CardView 배경색상 (isNow일 경우만 포인트 색상)-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/menu_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!--아침/점심/저녁-->
+            <TextView
+                android:id="@+id/menu_meal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textStyle="bold"/>
+
+            <!--반찬-->
+            <TextView
+                android:id="@+id/menu_dishes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
